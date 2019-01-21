@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Opdracht 1</title>
+   </head>
+   <body>
+        <p>Click the following button to see the result:</p>
+        <form>
+            <input type="button" value="Click Me" onclick="Warn();"/>
+        </form>
+        
+
+        <p>JavaScript Alert</p>
+        <button onclick="myFunction1()">Try it</button>
+
+        <p>JavaScript Confirm Box</p>
+        <button onclick="myFunction2()">Try it</button>
+        <p id="demo"></p>
+
+        <script>
+            var message="This is a warning message!";
+            function Warn(){
+               document.write(message);
+            };
+
+            function myFunction1(){
+                alert(message);
+            }
+
+            function myFunction2(){
+                var txt;
+                if(confirm("Press a button!")){
+                    txt="You pressed OK!";
+                } else {
+                    txt="You pressed Cancel!"
+                }
+                document.getElementById("demo").innerHTML=txt;
+            }
+        </script>
+ 
+   </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 4</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name : </label><input type="text" name="name" id="name" />
+        <label for="firstName">Firstname : </label><input type="text" name="firstName" id="firstName" />
+        <label for="city">city : </label><input type="text" name="city" id="city" />
+        <button name="validate" id="validate" onclick="myFunction();">validate</button>
+    </form>
+
+
+
+    <script>
+
+
+        var name = document.getElementById("name").value;
+        var firstName = document.getElementById("firstName").value;
+        var city = document.getElementById("city").value;
+        function myFunction() {
+            alert("Name: " + name + "\n" + "Firstname: " + firstName + "\n" + "City: " + city);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

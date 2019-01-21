@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Opdracht 5</title>
+   </head>
+   <body>
+    <form>
+        <label for="firstNumber">First number : </label><input type="text" id="firstNumber" name="firstNumber"/><br/>
+        <label for="secondNumber">Second number : </label><input type="text" id="secondNumber" name="secondNumber"/><br/>
+        <button  id="validate" name="validate" onclick="myFunction()">Validate</button>
+    </form>
+       
+      
+
+        <script>
+            
+            
+           
+            function myFunction(){
+                var firstNumber=document.getElementById("firstNumber").value;
+                var secondNumber=document.getElementById("secondNumber").value;
+                var myResult=firstNumber*secondNumber;
+          
+                alert(myResult);
+            }
+
+           
+        </script>
+ 
+   </body>
+</html>

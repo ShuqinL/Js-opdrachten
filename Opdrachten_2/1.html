@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+ 
+        <title>Opdracht 1</title>
+   </head>
+   <body>
+        <form>
+            <button id="validate" name="validate" onclick="surfaceRectagle()">Bereken het oppervlak van een rechthoek</button><br/>
+            <button id="validate" name="validate" onclick="perimeterRectagle()">Bereken de omtrek van een rechthoek</button>
+        </form>
+       
+      <script>
+
+       function surfaceRectagle(){
+                var width=prompt("Please enter the width of a rectangle:");
+                var height=prompt("Please enter the height of a rectangle:");
+                var surface=width*height;
+                alert("The surface of the rectangle is "+surface);
+            }
+
+        function perimeterRectagle(){
+                var width=prompt("Please enter the width of a rectangle:");
+                var height=prompt("Please enter the height of a rectangle:");
+                var perimeter=(width+height)*2;
+                alert("The perimeter of the rectangle is "+perimeter);
+            }
+
+
+      </script>
+ 
+   </body>
+</html>

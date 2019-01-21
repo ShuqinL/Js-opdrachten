@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Opdracht 3</title>
+   </head>
+   <body>
+        <p>JavaScript Prompt</p>
+     
+        <button onclick="myFunction()">Try it</button>
+
+
+        <script>
+            
+            function myFunction(){
+                var txt;
+                var person=prompt("Please enter your name:");
+                if (person==null||person==""){
+                    txt="Don't forget to enter your name.";
+                } else{
+                    txt="Hello "+person + " !";
+                }
+                alert(txt);
+            }
+            
+        </script>
+ 
+   </body>
+</html>
