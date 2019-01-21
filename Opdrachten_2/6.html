@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Opdracht 6</title>
+   </head>
+   <body>
+    <form>
+      
+        <button  id="validate" name="validate" onclick="display();">Display function</button>
+    </form>
+       
+      
+
+        <script>
+             
+             let tab=[-2,1,4];
+             let substract=function(x){
+                     return x-(-2);
+                     if(x>=0){
+                         document.write("Getal positief")
+                     } else {
+                         document.write("Negatief getal!")
+                     }
+             };
+            
+           
+            function display(){
+      
+          
+                alert(substract(tab[0]));
+                alert(substract(tab[tab.length-1]));
+            }
+
+           
+        </script>
+ 
+   </body>
+</html>
