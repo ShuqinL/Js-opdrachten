@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html>
-   <head>
-        <meta charset="UTF-8">
- 
-        <title>Opdracht 11</title>
-   </head>
-   <body>
-   
-     <form>
-       <button id="validate" name="validate" onclick="calcAverage()">Calculate the average number</button>
-     </form>
-     
-    
-      <script>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Opdracht 11</title>
+</head>
+
+<body>
+
+  <form>
+    <button id="validate" name="validate" onclick="calcAverage()">Calculate the average number</button>
+  </form>
 
 
-        let calcAverage=function(){
-          let num = parseInt(prompt("Please enter a integer"));
-          
-         while()
+  <script>
 
 
+    let calcAverage = function () {
+      let num = parseInt(prompt("Please enter a integer"));
+      let numArray = [];
+      while (Number.isInteger!==true){
+        alert("Fout!");
+        text = prompt("Please enter a integer");
+      }
+
+      if (num >= 0) {
+             let total =0
+             for (var i=0; i< 3;i++){
+             let num = parseInt(prompt("Please enter a number"));
+             total += num
+             }
+          document.write("Het aantal ingevoerde waarden is "+i+" en het gemiddelde is "+total/i);
+      }
 
 
+      // let total = 0;
 
-
-      
-         alert("Fout!");
-         text = prompt("Please enter a integer");
-
- 
-      };
-
+  
+     /* if (Number.isInteger(num) === true) {
+          if (num >= 0) {
+             let total =0
+             for (var i=0; i< 3;i++){
+             let num = parseInt(prompt("Please enter a number"));
+             total += num
+             }
+          document.write("Het aantal ingevoerde waarden is "+i+" en het gemiddelde is "+total/i);
          
-      </script>
- 
-   </body>
+          }*/
+       /*text = prompt("Please enter a integer");
+        if (num >= 0) {
+          numArray.push(num);
+          total += num;
+          let average = total / numArray.length;
+          document.write(average);
+        }
+      } else{
+      alert("Fout!");
+      text = prompt("Please enter a integer");
+      }*/
+    };
+
+    
+
+  </script>
+
+</body>
+
 </html>

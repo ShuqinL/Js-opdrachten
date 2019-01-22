@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Opdracht 12</title>
+</head>
+
+<body>
+
+ <p>0.End of the program</p>
+ <p>1.Celsius to Fahrenheit</p>
+ <p>2.Celsius to Kelvin</p>
+ <p>3.Fahrenheit to Celsius</p>
+ <p>4.Fahrenheit to Kelvin</p>
+ <p>5.Kelvin to Celsius</p>
+ <p>6.Kelvin to Fahrenheit</p>
+
+  <form>
+    <button id="validate" name="validate" onclick="TemperatureConversion()">Temperatuurconversie</button>
+  </form>
+
+
+   
+
+  <script>
+
+
+    let TemperatureConversion = function () {
+      let choice = parseInt(prompt("Please enter the number of your choice"));
+      switch(choice){
+         case 0:
+            alert("End of the program")
+        break;
+        case 1:
+            let choice1=parseInt(prompt("Please enter the Celsius temperature"));
+            let result1=(choice1*9/5)+32;
+            alert(choice1+"°C = "+result1+"°F");
+        break;
+        case 2:
+            let choice2=parseInt(prompt("Please enter the Celsius temperature"));
+            let result2=choice2+273.15;
+            alert(choice2+"°C = "+result2+"°K");
+        break;
+        case 3:
+            let choice3=parseInt(prompt("Please enter the Fahrenheit temperature"));
+            let result3=(choice3-32)/(9/5);
+            alert(choice3+"°F = "+result3+"°C");
+        break;
+        case 4:
+            let choice4=parseInt(prompt("Please enter the Fahrenheit temperature"));
+            let result4=((choice4-32)*(5/9))+273.15;
+            alert(choice4+"°F = "+result4+"°K");
+        break;
+        case 5:
+            let choice5=parseInt(prompt("Please enter the Kelvin temperature"));
+            let result5=choice5-273.15;
+            alert(choice5+"°K = "+result5+"°C");
+        break;
+        case 6:
+            let choice6=parseInt(prompt("Please enter the Kelvin temperature"));
+            let result6=(choice6*9/5)-459.67;
+            alert(choice6+"°K = "+result6+"°F");
+        break;
+     
+      }
+      
+  
+    };
+
+    
+
+  </script>
+
+</body>
+
+</html>
