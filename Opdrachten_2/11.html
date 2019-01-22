@@ -15,12 +15,30 @@
 
 
   <script>
+   
+   const calcAverage = () => {
+      let sum = 0
+      let totalInputs = 0
+      let input = parseFloat(prompt('geef een geheel getal in om mee op te tellen, geef een negatief getal in wanneer u het gemiddelde wil berekenen.'))
+    while(input >= 0){
+     //check if input number is a whole number
+     if((input-Math.floor(input)) === 0){
+          sum+=input
+          totalInputs++
+         input = parseFloat(prompt('geef een geheel getal in om mee op te tellen, geef een negatief getal in wanneer u het gemiddelde wil berekenen.'))
+     } else {
+         input = parseFloat(prompt('dat is geen geheel getal, voer een geheel getal in'));
+    }
+   }
+  alert(u gaf ${totalInputs} getallen in, waarvan het gemiddelde ${sum/totalInputs} bedraagt);
+
+} ; 
 
 
-    let calcAverage = function () {
-      let num = parseInt(prompt("Please enter a integer"));
-      let numArray = [];
-      while (Number.isInteger!==true){
+
+    /*let calcAverage = function () {
+      let num = parseFloat(prompt("Please enter a integer"));
+      while (num - Math.floor(num) === 0){
         alert("Fout!");
         text = prompt("Please enter a integer");
       }
@@ -28,38 +46,13 @@
       if (num >= 0) {
              let total =0
              for (var i=0; i< 3;i++){
-             let num = parseInt(prompt("Please enter a number"));
+             let num = parseFloat(prompt("Please enter a number"));
              total += num
              }
           document.write("Het aantal ingevoerde waarden is "+i+" en het gemiddelde is "+total/i);
       }
 
-
-      // let total = 0;
-
-  
-     /* if (Number.isInteger(num) === true) {
-          if (num >= 0) {
-             let total =0
-             for (var i=0; i< 3;i++){
-             let num = parseInt(prompt("Please enter a number"));
-             total += num
-             }
-          document.write("Het aantal ingevoerde waarden is "+i+" en het gemiddelde is "+total/i);
-         
-          }*/
-       /*text = prompt("Please enter a integer");
-        if (num >= 0) {
-          numArray.push(num);
-          total += num;
-          let average = total / numArray.length;
-          document.write(average);
-        }
-      } else{
-      alert("Fout!");
-      text = prompt("Please enter a integer");
-      }*/
-    };
+    };*/
 
     
 
