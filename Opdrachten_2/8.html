@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+ 
+        <title>Opdracht 8</title>
+   </head>
+   <body>
+   
+     <form>
+       <button id="validate" name="validate" onclick="weekday()">Weekday</button>
+     </form>
+     
+    
+      <script>
+
+
+        let weekday=function(){
+
+         switch(new Date().getDay()) {
+             case 0:
+               alert("Sunday");
+             break;
+             case 1:
+               alert("Monday");
+             break;
+             case 2:
+               alert("Tuesday");
+             break;
+             case 3:
+               alert("Wednesday");
+             break;
+             case 4:
+               alert("Thursday");
+             break;
+             case 5:
+               alert("Friday");
+             break;
+             case  6:
+              alert("Saturday");
+          }
+   
+ 
+      };
+
+         
+      </script>
+ 
+   </body>
+</html>

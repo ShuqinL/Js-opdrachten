@@ -13,21 +13,28 @@
       
 
         <script>
+
+
+      //const display = tab => { for(let i = 0; i < tab.length;i ++){ substract(tab[i]) } }
              
              let tab=[-2,1,4];
-             let substract=function(x){
-                     return x-(-2);
-                     if(x>=0){
-                         document.write("Getal positief")
+
+             
+
+               let substract=function(x){
+                     var result=x-tab[0];
+                     return result;
+                     if(result>=0){ 
+                         alert("Getal positief");
                      } else {
-                         document.write("Negatief getal!")
+                         alert("Negatief getal!");
                      }
              };
             
            
-            function display(){
-      
-          
+             function display(){
+                
+                //for(let i = 0; i < tab.length;i ++){ substract(tab[i]) };
                 alert(substract(tab[0]));
                 alert(substract(tab[tab.length-1]));
             }

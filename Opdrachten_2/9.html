@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+ 
+        <title>Opdracht 9</title>
+   </head>
+   <body>
+   
+     <form>
+       <button id="validate" name="validate" onclick="testWhile()">Click here</button>
+     </form>
+     
+    
+      <script>
+
+
+        let testWhile=function(){
+          let text = prompt("Please enter a word or phrase with the letter \"p\"");
+          
+
+     
+          while(!text.includes('p')){
+            text = prompt("Please enter a word or phrase with the letter \"p\"");
+          }
+      
+            document.write("\""+text+"\"");
+     
+ 
+      };
+
+         
+      </script>
+ 
+   </body>
+</html>

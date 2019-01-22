@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+ 
+        <title>Opdracht 7</title>
+   </head>
+   <body>
+   
+     <form>
+          <button id="validate" name="validate" onclick="makeChoice()">Make a choice</button>
+      </form>
+    
+      <script>
+
+
+        let makeChoice=function(){
+
+         var number = prompt("Please enter 1, 2 or 3","");
+
+         switch(number) {
+             case "1":
+               alert("1.Thank you");
+             break;
+             case "2":
+               alert("2.Hello");
+             break;
+             case "3":
+               alert("3.Good bye");
+             break;
+            default:
+               alert("Excuse me, what do you want?");
+          }
+ 
+      };
+
+         
+      </script>
+ 
+   </body>
+</html>
