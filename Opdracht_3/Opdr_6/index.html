@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Opdracht 6</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <img src="images/image1.jpg" id="image1" />
+      <img src="images/image2.jpg" id="image2" />
+      <img src="images/image3.jpg" id="image3" />
+      <img src="images/image4.jpg" id="image4" />
+      <img src="images/image5.jpg" id="image5" />
+    </div>
+   
+<script>
+/* Doe in het meegeleverde HTML-bestand hetzelfde als in oefening 5, maar keer terug naar de originele afbeelding zodra de muis niet langer over de afbeelding zweeft.
+Bonus Maak slechts 2 functies voor deze oefening. */
+
+var image = document.querySelector(".container");
+  image.addEventListener("mouseenter",changeImage);
+  image.addEventListener("mouseleave",returnImage); 
+
+  function changeImage(){
+  image.innerHTML="<img src=\"images/image1_2.jpg\"/><img src=\"images/image2_2.jpg\"/><img src=\"images/image3_2.jpg\"/><img src=\"images/image4_2.jpg\"/><img src=\"images/image5_2.jpg\"/>";
+}
+  function returnImage(){
+  image.innerHTML="<img src=\"images/image1.jpg\"/><img src=\"images/image2.jpg\"/><img src=\"images/image3.jpg\"/><img src=\"images/image4.jpg\"/><img src=\"images/image5.jpg\"/>";
+}
+
+</script>
+  
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Opdracht 2</title>
+</head>
+<body>
+  <form>
+    <label for="name">Name : </label><input type="text" name="name" value="" id="name"/>
+  </form>
+
+  <script>
+ /*  In het meegeleverde HTML-bestand verschijnt een alertvenster met het bericht : Dank u 
+  voor uw deelname wanneer het invoerveld de focus verliest.
+*/
+  document.getElementById("name").addEventListener("blur", alertAppear);
+  function alertAppear(){
+    alert("Dank u voor uw deelname");
+  }
+
+ </script>
+
+</body>
+</html>
