@@ -10,5 +10,20 @@
     <label for="confirmation">Confirm : </label><input type="text" name="confirmation" value="" id="confirmation" />
     <button type="button" name="button" >Submit</button>
   </form>
+<script>
+/* Zet in het meegeleverde HTML-bestand de invoergrenzen in het rood als de wachtwoorden verschillend zijn.
+ Zet ze anders in het groen. */
+ document.getElementById("confirmation").addEventListener("keyup", checkPassword);
+
+ function checkPassword(){
+   if(document.getElementById("password").value==document.getElementById("confirmation").value){
+    document.getElementById("confirmation").style.border="green 1px solid";
+   } else {
+    document.getElementById("confirmation").style.border="red 1px solid";
+   }
+ }
+
+</script>
+
 </body>
 </html>

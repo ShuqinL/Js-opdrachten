@@ -14,5 +14,25 @@
   <div class="color red" ></div>
   <div class="color blue" ></div>
 </div>
+
+<script>
+/* Wijzig in het meegeleverde HTML-bestand de kleur van de tekst volgens de geselecteerde knop. */
+document.querySelector(".green").addEventListener("click",greenText);
+document.querySelector(".red").addEventListener("click",redText);
+document.querySelector(".blue").addEventListener("click",blueText);
+
+function greenText(){
+  document.getElementById("text").style.color="green";
+}
+function redText(){
+  document.getElementById("text").style.color="red";
+}
+function blueText(){
+  document.getElementById("text").style.color="blue";
+}
+
+</script>
+
+
 </body>
 </html>

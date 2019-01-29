@@ -6,5 +6,22 @@
   </head>
   <body>
       <img src="images/image1.jpg" id="image1"/>
+
+  <script>
+/*   In het meegeleverde HTML-bestand, wanneer u over de afbeelding hovert, voegt u een 
+  rode 3px rand toe en verwijdert u deze wanneer de muis er niet meer overheen zweeft. */
+  document.getElementById("image1").addEventListener("mouseenter",addBorder);
+  document.getElementById("image1").addEventListener("mouseleave",removeBorder);
+  function addBorder(){
+    document.getElementById("image1").style.border="red 3px solid";
+  }
+  function removeBorder(){
+    document.getElementById("image1").style.border="none";
+  }
+
+
+
+  </script>
+
   </body>
 </html>
