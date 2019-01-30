@@ -9,7 +9,7 @@ describe('Strings of characters : ', function () {
 
     it('Replace the first word in the chain to a C', function () {
         var result = ReplaceThis('This text has a certain size');
-        expect(result).toEqual('C text at a certain size');
+        expect(result).toEqual('C text has a certain size');
     });
 
     it('Concatenate the two strings', function () {
